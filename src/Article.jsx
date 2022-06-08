@@ -30,7 +30,7 @@ function Article({ article, articles, setArticles, iRow, iCol }) {
                 Article's title:
                 <input type='text' value={title} onChange={handleChange} />
               </label>
-              <input type='submit' value='Submit' />
+              <button type='submit'>Save</button>
             </form>
           ) : (
             <h2>
@@ -40,7 +40,7 @@ function Article({ article, articles, setArticles, iRow, iCol }) {
                 className='edit-button'
               >
                 <AiTwotoneEdit />
-                <span hidden>Edit</span>
+                <span className='visually-hidden'>Edit</span>
               </button>
             </h2>
           )}
@@ -61,7 +61,7 @@ function Article({ article, articles, setArticles, iRow, iCol }) {
           100%,
           `}
         alt={article?.title}
-        loading='lazy'
+        loading={iRow === 0 ? 'eager' : 'lazy'}
         height='172'
         width='200'
       />

@@ -20,6 +20,10 @@ code {
     monospace;
 }
 
+a {
+  overflow-wrap: anywhere;
+}
+
 ul, li {
   list-style: none;
   margin: 0;
@@ -42,4 +46,14 @@ button {
   --bg-secondary: #fffcfa;
 
   --color-pink: #F35D67;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

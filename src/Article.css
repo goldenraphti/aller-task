@@ -42,6 +42,7 @@
   width: 100%;
   height: auto;
   min-height: 150px;
+  background-color: var(--color-primary);
 }
 
 .edit-button {
@@ -59,4 +60,17 @@
 .edit-button:hover {
   background-color: var(--bg-primary-alpha);
   color:var(--bg-primary);
+}
+
+form label {
+  padding-right: 10px;
+}
+
+form input {
+  background-color: #fff;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid #999;
+  padding: 5px;
+  margin: 0 5px;
 }
