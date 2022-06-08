@@ -9,7 +9,8 @@ Having more time I would have liked to:
 - [ ] have a meaningful & good looking "failed" screen, giving user more exit ways instead of a basic fail message
 - [ ] use postCSS to use nestedCSS to have cleaner CSS files
 - [ ] improve the style of the "title edit UI"
-- [ ] probably more things that we could chat about
+- [ ] explore more the web-perf part: images are impacting the LCP. So far I had given the browser choice of picking the good version. But it's not fast enough and I think it's giving too high density for high-density screens for the weight of the images. Either limit pixel-ratio or improve image perf (modern image format i.e. ".avif", compression)
+- [ ] probably more things that we could chat about ;-)
 
 # Thoughts
 
