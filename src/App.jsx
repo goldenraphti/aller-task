@@ -22,8 +22,10 @@ function App() {
   }, []);
 
   return (
-    <div className="">
-      <header className="">Dagbladet</header>
+    <div className='body'>
+      <h1 className=''>
+        Dagbladet<span> - editor mode</span>
+      </h1>
       <main>
         <ul>
           {articles.map((row, iRow) => (
